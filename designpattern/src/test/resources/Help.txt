@@ -1,7 +1,7 @@
 Creational Design Patterns
 Singleton Pattern         --------------------- Done
-Factory Pattern           --------------------- In-Progress
-Abstract Factory Pattern
+Factory Pattern           --------------------- Done
+Abstract Factory Pattern  --------------------- In-Progress
 Builder Pattern
 Prototype Pattern
 

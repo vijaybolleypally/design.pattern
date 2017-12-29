@@ -1,4 +1,7 @@
 package dp.creational;
 
-public class DogSubCls {
+public class DogSubCls extends AnimalAbs {
+    public String makeSound() {
+        return "BOV...BOV";
+    }
 }

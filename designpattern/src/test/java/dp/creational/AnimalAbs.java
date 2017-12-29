@@ -1,5 +1,5 @@
 package dp.creational;
 
-public abstract class AbsAnimal {
-    
+public abstract class AnimalAbs {
+    public abstract String makeSound();
 }

@@ -1,8 +1,9 @@
 package dp.creational;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class creationalPatternDemo {
+public class CreationalPatternDemo {
     @Test
     public void singletonPattern_Test1() {
         //Get the only object available
@@ -25,4 +26,10 @@ public class creationalPatternDemo {
         object1.methodOne();
     }
 
+    @Test
+    public void factoryPattern_Test1() {
+        AnimalFactory animalFactory = new AnimalFactory();
+        Assert.assertEquals(animalFactory.getAnimal("Dog").makeSound(), "BOV...BOV");
+        Assert.assertEquals(animalFactory.getAnimal("cat").makeSound(), "Meow....");
+    }
 }
