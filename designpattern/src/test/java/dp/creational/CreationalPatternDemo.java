@@ -3,6 +3,8 @@ package dp.creational;
 import dp.creational.builder.*;
 import dp.creational.factory.AbstractFactory;
 import dp.creational.factory.AnimalFactory;
+import dp.creational.prototype.Dog;
+import dp.creational.prototype.Person;
 import dp.creational.singleton.SingleObject;
 import dp.creational.singleton.SingleObjectType2;
 import org.testng.Assert;
@@ -57,5 +59,18 @@ public class CreationalPatternDemo {
         mealDirector = new MealDirector(japaneseMeal);
         mealDirector.constructMeal();
         System.out.println(mealDirector.getMeal().toString());
+    }
+
+    @Test
+    public void prototypePattern_Test1(){
+        Person person1 = new Person("Fred");
+        System.out.println("person 1:" + person1);
+        Person person2 = (Person) person1.doClone();
+        System.out.println("person 2:" + person2);
+
+        Dog dog1 = new Dog("Wooof!");
+        System.out.println("dog 1:" + dog1);
+        Dog dog2 = (Dog) dog1.doClone();
+        System.out.println("dog 2:" + dog2);
     }
 }

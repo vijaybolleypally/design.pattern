@@ -3,10 +3,10 @@ Singleton Pattern           --------------------- Done
 Factory Pattern             --------------------- Done
 Abstract Factory Pattern    --------------------- Done
 Builder Pattern             --------------------- Done
-Prototype Pattern           --------------------- In-Progress
+Prototype Pattern           --------------------- Done
 
 Structural Design Patterns
-Adapter Pattern
+Adapter Pattern             --------------------- In-Progress
 Composite Pattern
 Proxy Pattern
 Flyweight Pattern
