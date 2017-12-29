@@ -1,5 +1,6 @@
 package dp.creational;
 
+import dp.creational.builder.*;
 import dp.creational.factory.AbstractFactory;
 import dp.creational.factory.AnimalFactory;
 import dp.creational.singleton.SingleObject;
@@ -43,5 +44,18 @@ public class CreationalPatternDemo {
         Assert.assertEquals(abstractFactory.getSpeciesFactory("mammal").getAnimal("Dog").makeSound(), "BOV...BOV");
         Assert.assertEquals(abstractFactory.getSpeciesFactory("reptile").getAnimal("Snake").makeSound(), "Hiss");
 
+    }
+
+    @Test
+    public void builderPattern_Test1(){
+        MealBuilder indianMeal = new IndianMealBuilder();
+        MealDirector mealDirector = new MealDirector(indianMeal);
+        mealDirector.constructMeal();
+        System.out.println(mealDirector.getMeal().toString());
+
+        MealBuilder japaneseMeal = new JapaneseMealBuilder();
+        mealDirector = new MealDirector(japaneseMeal);
+        mealDirector.constructMeal();
+        System.out.println(mealDirector.getMeal().toString());
     }
 }
