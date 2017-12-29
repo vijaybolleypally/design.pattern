@@ -1,0 +1,27 @@
+Creational Design Patterns
+Singleton Pattern         --------------------- Done
+Factory Pattern           --------------------- In-Progress
+Abstract Factory Pattern
+Builder Pattern
+Prototype Pattern
+
+Structural Design Patterns
+Adapter Pattern
+Composite Pattern
+Proxy Pattern
+Flyweight Pattern
+Facade Pattern
+Bridge Pattern
+Decorator Pattern
+
+Behavioral Design Patterns
+Template Method Pattern
+Mediator Pattern
+Chain of Responsibility Pattern
+Observer Pattern
+Strategy Pattern
+Command Pattern
+State Pattern
+Visitor Pattern
+Iterator Pattern
+Memento Pattern
