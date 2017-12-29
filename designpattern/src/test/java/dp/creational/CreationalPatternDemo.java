@@ -1,5 +1,9 @@
 package dp.creational;
 
+import dp.creational.factory.AbstractFactory;
+import dp.creational.factory.AnimalFactory;
+import dp.creational.singleton.SingleObject;
+import dp.creational.singleton.SingleObjectType2;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -31,5 +35,13 @@ public class CreationalPatternDemo {
         AnimalFactory animalFactory = new AnimalFactory();
         Assert.assertEquals(animalFactory.getAnimal("Dog").makeSound(), "BOV...BOV");
         Assert.assertEquals(animalFactory.getAnimal("cat").makeSound(), "Meow....");
+    }
+
+    @Test
+    public void abstractFactoryPattern_Test1() {
+        AbstractFactory abstractFactory = new AbstractFactory();
+        Assert.assertEquals(abstractFactory.getSpeciesFactory("mammal").getAnimal("Dog").makeSound(), "BOV...BOV");
+        Assert.assertEquals(abstractFactory.getSpeciesFactory("reptile").getAnimal("Snake").makeSound(), "Hiss");
+
     }
 }

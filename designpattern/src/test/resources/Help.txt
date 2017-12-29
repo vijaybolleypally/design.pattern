@@ -1,8 +1,8 @@
 Creational Design Patterns
 Singleton Pattern         --------------------- Done
 Factory Pattern           --------------------- Done
-Abstract Factory Pattern  --------------------- In-Progress
-Builder Pattern
+Abstract Factory Pattern  --------------------- Done
+Builder Pattern           --------------------- In-Progress
 Prototype Pattern
 
 Structural Design Patterns

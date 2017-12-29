@@ -1,4 +1,4 @@
-package dp.creational;
+package dp.creational.factory;
 
 public class CatSubCls extends AnimalAbs {
     public String makeSound() {

@@ -1,4 +1,4 @@
-package dp.creational;
+package dp.creational.singleton;
 
 public class SingleObject {
 
